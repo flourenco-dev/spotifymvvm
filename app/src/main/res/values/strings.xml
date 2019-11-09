@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Spotify MVVM</string>
+
+    <string name="search">Search</string>
+    <string name="not_able_to_get_playlists">Not able to get playlists…</string>
+    <string name="not_able_to_get_tracks">Not able to get tracks…</string>
+
+    <string name="spotify_scheme">direct</string>
+    <string name="spotify_host">fabiolourenco.spotifymvvm.login</string>
+</resources>

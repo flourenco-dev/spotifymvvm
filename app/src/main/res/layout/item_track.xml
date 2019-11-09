@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/paddingHalf"
+        android:layout_marginBottom="@dimen/paddingHalf"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/paddingDouble">
+
+        <FrameLayout
+                android:layout_width="@dimen/trackImageSize"
+                android:layout_height="@dimen/trackImageSize">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/trackImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    tools:src="@drawable/ic_album"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/trackPlayButton"
+                    android:layout_width="@dimen/trackPlayButtonSize"
+                    android:layout_height="@dimen/trackPlayButtonSize"
+                    android:src="@drawable/ic_play_arrow"
+                    android:cropToPadding="true"
+                    android:layout_gravity="start|top"
+                    android:background="@color/overlay"
+                    android:tint="@color/white"/>
+        </FrameLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/padding"
+                android:paddingTop="@dimen/padding"
+                android:paddingBottom="@dimen/padding"
+                android:orientation="vertical">
+
+            <TextView
+                    android:id="@+id/trackName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textStyle="bold"/>
+
+            <TextView
+                    android:id="@+id/trackArtist"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+            <TextView
+                    android:id="@+id/trackAlbum"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:ellipsize="end"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

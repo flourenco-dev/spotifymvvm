@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="padding">4dp</dimen>
+    <dimen name="progressBarSize">50dp</dimen>
+    <dimen name="paddingQuarter">1dp</dimen>
+    <dimen name="maxTextSize">14sp</dimen>
+    <dimen name="playlistPlayButtonSize">36dp</dimen>
+    <dimen name="playlistNameContainerHeight">32dp</dimen>
+    <dimen name="paddingHalf">2dp</dimen>
+    <dimen name="paddingDouble">8dp</dimen>
+    <dimen name="trackImageSize">80dp</dimen>
+    <dimen name="trackPlayButtonSize">28dp</dimen>
+</resources>

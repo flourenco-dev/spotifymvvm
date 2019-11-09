@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fabiolourenco.spotifymvvm.ui.base.SquareLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/padding">
+
+    <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/playlistImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/ic_list"/>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/playlistNameContainerHeight"
+            android:background="@color/overlay"
+            android:layout_gravity="bottom"
+            android:padding="@dimen/paddingQuarter">
+
+        <TextView
+                android:id="@+id/playlistName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:includeFontPadding="false"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:maxLines="1"
+                app:autoSizeMaxTextSize="@dimen/maxTextSize"
+                app:autoSizeTextType="uniform"/>
+
+    </FrameLayout>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/playlistPlayButton"
+            android:layout_width="@dimen/playlistPlayButtonSize"
+            android:layout_height="@dimen/playlistPlayButtonSize"
+            android:src="@drawable/ic_play_arrow"
+            android:layout_gravity="end|top"
+            android:background="@color/overlay"
+            android:tint="@color/white"/>
+
+</com.fabiolourenco.spotifymvvm.ui.base.SquareLayout>
